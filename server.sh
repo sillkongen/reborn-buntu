@@ -2,7 +2,9 @@
 
 apt-get update ; apt-get upgrade -y
 
-apt-get install docker.io mhddfs xfsprogs 
+apt-get install docker.io mhddfs xfsprogs openssh-server
+
+systemctl enable ssh
 
 #systemctl set-default multi-user
 systemctl set-default multi-user.target
