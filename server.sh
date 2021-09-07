@@ -23,4 +23,9 @@ ufw allow proto tcp to any port 445 from 192.168.1.0/24
 # Nebula
 # Add certificates - startup process - and configuration
 
+cp 01-netcfg.yam /etc/netplan/01-netcfg.yaml
+
+netplan apply
+
+shutdown now -r
 
