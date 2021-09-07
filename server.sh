@@ -4,8 +4,8 @@ apt-get update ; apt-get upgrade -y
 
 apt-get install docker.io mhddfs xfsprogs 
 
-systemctl set-default multi-user
-
+#systemctl set-default multi-user
+systemctl set-default multi-user.target
 # Firewall entries
 ufw allow ssh
 ufw --force enable
